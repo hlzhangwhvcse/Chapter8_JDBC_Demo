@@ -19,8 +19,8 @@ public class JdbcDemo2
 		
 		try 
 		{
-			//Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbcdb","root","root");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306","root","root");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_ph","root","root");
+			//Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306","root","root");
 			System.out.println("连接mysql数据库成功");
 		} 
 		catch (SQLException e) 
