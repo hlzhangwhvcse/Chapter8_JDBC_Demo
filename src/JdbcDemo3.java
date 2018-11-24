@@ -31,7 +31,7 @@ public class JdbcDemo3
 			
 			//在使用 ResultSet 之前，必须查询它包含多少个列。此信息存储在 ResultSetMetaData 对象中。ResultSet 对象是 JDBC 中最重要的单个对象。从本质上讲，它是对一个一般宽度和未知长度的表的一种抽象
 			ResultSetMetaData resultSetMetaData = resultSet.getMetaData();
-			for(int i=1;i<=resultSetMetaData.getColumnCount();i++)
+			for(int i=1; i<=resultSetMetaData.getColumnCount(); i++)
 			{
 				System.out.print("  |  "+resultSetMetaData.getColumnLabel(i)+"("+resultSetMetaData.getColumnTypeName(i)+")");
 			}
