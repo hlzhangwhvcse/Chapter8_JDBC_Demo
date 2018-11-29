@@ -24,14 +24,14 @@ public class JdbcDemo4
 			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/world","root","root");
 			statement = connection.createStatement();
 			
-//			rowCount = statement.executeUpdate("insert into city(ID, Name, CountryCode, District, Population) values('4080', 'Wu Han','CHN', 'Hu Bei', '1000')");
-//			System.out.println("====插入了"+ rowCount + "条数据====");
+			rowCount = statement.executeUpdate("insert into city(ID, Name, CountryCode, District, Population) values(4080, 'Wu Han','CHN', 'Hu Bei', 1000)");
+			System.out.println("====插入了"+ rowCount + "条数据====");
 			
 //			rowCount = statement.executeUpdate("update city set Population=10000000 where id=4080");
 //			System.out.println("====更新了" + rowCount +"条数据====");
 			
-			rowCount = statement.executeUpdate("delete from city where ID = 4080");
-			System.out.println("====删除了" + rowCount + "条数据====");
+			//rowCount = statement.executeUpdate("delete from city where ID = 4080");
+			//System.out.println("====删除了" + rowCount + "条数据====");
 		} 
 		catch (SQLException e) 
 		{

@@ -29,7 +29,7 @@ public class JdbcDemo3
 			statement = connection.createStatement();
 			resultSet = statement.executeQuery("select * from city");
 			
-			//在使用 ResultSet 之前，必须查询它包含多少个列。此信息存储在 ResultSetMetaData 对象中。ResultSet 对象是 JDBC 中最重要的单个对象。从本质上讲，它是对一个一般宽度和未知长度的表的一种抽象
+			//在使用 ResultSet之前，先查询其包含多少个列，列信息存储在 ResultSetMetaData对象，ResultSet对象是 JDBC重要对象，本质上是对一个宽度和长度未知表的抽象
 			ResultSetMetaData resultSetMetaData = resultSet.getMetaData();
 			for(int i=1; i<=resultSetMetaData.getColumnCount(); i++)
 			{
