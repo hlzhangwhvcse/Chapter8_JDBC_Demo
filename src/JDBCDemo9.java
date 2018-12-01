@@ -2,8 +2,6 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-import java.util.ArrayList;
-
 public class JDBCDemo9 
 {
 
